@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import { HeroSection } from "./HeroSection";
+import { FurnitureSection } from "./FurnitureSection";
+import { AboutSection } from "./AboutSection";
+import { BlogSection } from "./BlogSection";
+import { ClientSection } from "./ClientSection";
+import { ContactSection } from "./ContactSection";
+import { InfoSection } from "./InfoSection";
+import { Footer } from "./Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <div>
+      <HeroSection/>
+      <FurnitureSection/>
+      <AboutSection/>
+      <BlogSection/>
+      <ClientSection/>
+      <ContactSection/>
+      <InfoSection/>
+      <Footer/>
     </div>
   );
 }
